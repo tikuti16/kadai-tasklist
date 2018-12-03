@@ -1,6 +1,6 @@
-@extends('layouts.app');
+@extends('layouts.app')
 
-@section('content');
+@section('content')
 
   <h1>id = {{ $task->id }} のタスク詳細ページ</h1>
   
@@ -8,6 +8,10 @@
     <tr>
       <th>id</th>
       <td>{{ $task->id }}</td>
+    </tr>
+    <tr>
+      <th>項目</th>
+      <td>{{ $task->status }}</td>
     </tr>
     <tr>
       <th>タスク</th>
